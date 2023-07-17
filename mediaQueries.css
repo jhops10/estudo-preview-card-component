@@ -1,10 +1,84 @@
-@media screen and (max-width: 375px) {
-
-  .main-img {
-    display: none;
-  }
-  .main-article {
-    margin-top: 2rem;
+@media (min-width: 620px) {
+  .container-conteudo {
+    width: 600px;
+    height: 400px;
+    flex-direction: row;
   }
 
+  .container-imagem {
+    width: 300px;
+  }
+
+  .imagem-produto-desktop {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .imagem-produto-mobile {
+    width: 0;
+  }
+
+  .container-texto {
+    width: 300px;
+  }
+
+  .conteudo-container-texto {
+    width: 78%;
+  }
+
+  .descricao {
+    margin: 30px 0 20px;
+  }
+
+
+}
+
+@media (max-width: 619px) {
+  .container-conteudo {
+    width: 360px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-imagem {
+    width: 100%;
+    display: flex;
+  }
+
+  .imagem-produto-desktop {
+    width: 0;
+  }
+
+  .imagem-produto-mobile {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .container-texto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .conteudo-container-texto {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+  }
+
+  .descricao {
+    margin: 20px 0 10px;
+  }
+
+  .preco-antigo {
+    display: inline-block;
+    vertical-align: middle;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
 }
